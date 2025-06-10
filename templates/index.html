@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福州旅游规划小助手</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 左侧聊天记录列表 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <button id="new-chat-btn">创建新聊天</button>
+            </div>
+            <div class="history-list" id="history-list">
+                <!-- 历史对话记录将动态添加在这里 -->
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-info">当前用户ID: <span id="current-user-id">1</span></div>
+            </div>
+        </div>
+
+        <!-- 中间对话窗口 -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2><img src="/static/images/fujian_university_logo.svg" alt="福建工程学院" class="header-logo">福州旅游规划小助手</h2>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="welcome-message">
+                    <h3><img src="/static/images/fujian_university_logo.svg" alt="福建工程学院" class="welcome-logo">欢迎使用福州旅游规划小助手</h3>
+                    <p>每个用户ID代表一个独立的聊天记录</p>
+                    <p>请在下方输入框中输入您的问题</p>
+                </div>
+                <!-- 消息将动态添加在这里 -->
+            </div>
+            <div class="chat-input-container">
+                <textarea id="message-input" placeholder="输入消息..." rows="1"></textarea>
+                <button id="send-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M3 13.5L9.5 12 3 10.5v-3l12 5.5-12 5.5v-3zm19-1.5v4H9v-4h13z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/chat.js"></script>
+</body>
+</html> 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- 外圆 -->
+  <circle cx="50" cy="50" r="48" fill="#1E5C97" stroke="#0C3B6A" stroke-width="2"/>
+  
+  <!-- 内圈白色边框 -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  
+  <!-- 中心蓝色圆 -->
+  <circle cx="50" cy="50" r="38" fill="#1E5C97" stroke="#FFFFFF" stroke-width="1"/>
+  
+  <!-- 柱状结构 -->
+  <g fill="#FFFFFF">
+    <!-- 中心柱子组 -->
+    <rect x="45" y="25" width="2" height="30"/>
+    <rect x="49" y="25" width="2" height="30"/>
+    <rect x="53" y="25" width="2" height="30"/>
+    <rect x="41" y="25" width="2" height="30"/>
+    <rect x="57" y="25" width="2" height="30"/>
+    <rect x="37" y="25" width="2" height="30"/>
+    <rect x="61" y="25" width="2" height="30"/>
+    
+    <!-- 底座 -->
+    <rect x="35" y="55" width="30" height="2"/>
+    <rect x="33" y="57" width="34" height="2"/>
+    <rect x="30" y="59" width="40" height="2"/>
+  </g>
+  
+  <!-- 年份 -->
+  <text x="50" y="68" font-family="Arial" font-size="7" fill="#FFFFFF" text-anchor="middle">-1896-</text>
+  
+  <!-- 外环文字 - 简化处理 -->
+  <path id="circle-top" d="M 50,12 a 38,38 0 0,1 0,76" fill="none"/>
+  <path id="circle-bottom" d="M 50,88 a 38,38 0 0,1 0,-76" fill="none"/>
+  
+  <text font-family="Arial" font-size="6" fill="#FFFFFF">
+    <textPath href="#circle-top" startOffset="5%">FUJIAN UNIVERSITY OF TECHNOLOGY</textPath>
+  </text>
+  
+  <text font-family="Arial" font-size="7" fill="#FFFFFF">
+    <textPath href="#circle-bottom" startOffset="15%">福建工程学院</textPath>
+  </text>
+</svg> 
